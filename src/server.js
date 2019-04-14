@@ -1,10 +1,10 @@
-const express = require('express');
+const express = require('express')
 const path = require('path')
 
 const cors = require('cors')
 const mongoose = require('mongoose')
 
-const app = express();
+const app = express()
 
 app.use(cors())
 
@@ -21,7 +21,7 @@ io.on('connection', socket => {
     })
 })
 
-mongoose.connect("mongodb+srv://oministack:oministack@cluster0-qb0nz.mongodb.net/oministack?retryWrites=true", {
+mongoose.connect('mongodb+srv://oministack:oministack@cluster0-qb0nz.mongodb.net/oministack?retryWrites=true', {
     useNewUrlParser: true
 })
 
